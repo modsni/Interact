@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+<title>Cluster Tracker Reminder 0.1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body style="background-color:#f0d9c0;">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-brown" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right">INTER-ACT SITE</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="https://www.donkey.bike/wp-content/uploads/2020/12/user-member-avatar-face-profile-icon-vector-22965342-e1608640557889.jpg" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span>WELCOME, <strong>INTER-ACT USER</strong></span><br>
+      <a href="https://calendar.google.com/calendar?authuser=0" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i></a>
+      <a href="https://mail.google.com/mail/?authuser=0" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+      <a href="https://drive.google.com/?authuser=0" class="w3-bar-item w3-button"><i class="fa fa-folder-o"></i></a>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Quick Links</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="https://docs.google.com/spreadsheets/d/10mV2369wlJWasObu4olxg9G8rXQIks7LsXPNCGz32Sk/edit#gid=624659199" target="_blank" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i> Hideout Attrition Masterfile</a>
+    <a href="https://docs.google.com/spreadsheets/d/1wVVtPCc9tfFyJesUf9Y5T-8F2fMFIfB2WTfMqtxBUTs/edit#gid=0" target="_blank" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Hideout RAG Tagging</a>
+    <a href="https://docs.google.com/spreadsheets/d/1Tu0SD-abEe2ktV7k_zFmJPzXWFSHdc9M-0bdO5CoSa4/edit#gid=0" Target="_blank" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Hideout Absenteeism Report</a>
+    <a href="https://docs.google.com/spreadsheets/d/1crGWgp86Wid0G9cZSXTGUQUfzdfouoW3soWqBAgUlg8/edit#gid=1609626048" target="_blank" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Employee Roster</a>
+    <a href="https://internal.supportninja.com" target="_blank" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Internal Dashboards</a>
+    <a href="https://docs.google.com/spreadsheets/d/18QRSatONXlysuvsnspJA-muhsrskN62q8UfwolyPgwM/edit#gid=1068812697" target="_blank" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  CHS - Hideout</a>
+    <a href="https://internal.supportninja.com" target="_blank" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  SN Internal Dashboards</a>
+	<a href="https://docs.google.com/spreadsheets/d/1YmH7V4wXBtg5-Afag8VAKkrQ6mFTzxlbHgjQD-9_XQA/edit#gid=2121396360" target="_blank" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i> Occupancy</a><br><br>             
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-bookmark"></i> Cluster Typify AICCE Reminders</b></h5>
+  </header>
+
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter">
+      <div class="w3-container w3-pink w3-padding-16">
+        <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3><a href="https://docs.google.com/spreadsheets/d/1dOIAWFE3uYRU_tl1JVngADXqtqJGWJpx2as6gJEFmzk/edit#gid=1505498776" target="_blank">CHS - Hideout (Weekly Update)</a></h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4></h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-indigo w3-padding-16">
+        <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3><a href="https://docs.google.com/spreadsheets/d/10mV2369wlJWasObu4olxg9G8rXQIks7LsXPNCGz32Sk/edit#gid=624659199" target="_blank">HO Attrition Masterfile(Update EOM)</a></h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4></h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3><a href="https://docs.google.com/spreadsheets/d/1wVVtPCc9tfFyJesUf9Y5T-8F2fMFIfB2WTfMqtxBUTs/edit#gid=0" traget="_blank">HO RAG Tagging(Weekly Update)</a></h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4></h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-purple w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3><a href="https://docs.google.com/spreadsheets/d/1Tu0SD-abEe2ktV7k_zFmJPzXWFSHdc9M-0bdO5CoSa4/edit#gid=0" target="_blank">HO Absenteeism Report(Update EOM)</a></h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4></h4>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5><b><i class="fa fa-laptop"></i> Message Board & Calendar Tracker</b></h5>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #008ae6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #b3e0ff;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Board & Event Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #message-board,
+        #event-tracker {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        #posts-container {
+            margin-top: 20px;
+        }
+
+        .post {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .post-content {
+            margin-bottom: 10px;
+        }
+
+        .post-details,
+        .post-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #post-form {
+            margin-top: 20px;
+        }
+
+        #user-name,
+        #post-content,
+        #event-title,
+        #event-date {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #event-time {
+            width: 50%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button.delete {
+            background-color: #ff5555;
+            color: #fff;
+        }
+
+        button.delete:hover {
+            background-color: #dd0000;
+        }
+
+        button.resolve {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        button.resolve:hover {
+            background-color: #2980b9;
+        }
+
+        button.post,
+        button.add-event {
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        button.post:hover,
+        button.add-event:hover {
+            background-color: #45a049;
+        }
+
+        .calendar-event {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .event-details,
+        .event-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+         
+
+
+    </style>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /* CSS for border */
+    .container {
+      border: 1px solid #ccc; /* Define border properties */
+      padding: 20px; /* Add some padding for better appearance */
+      border-radius: 10px; /* Optional: Add rounded corners */
+    }
+  </style>
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /* CSS for border and background */
+    .container {
+      border: 1px solid #ccc; /* Define border properties */
+      padding: 20px; /* Add some padding for better appearance */
+      border-radius: 10px; /* Optional: Add rounded corners */
+      background-color: white; /* Set background color */
+    }
+  </style>
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-dashboard"></i></b></h5>
+  </header>
+</head>
+<body>
+  <!-- Add your content here -->
+  <div class="container"> <!-- Add class to div to apply border -->
+    <div class="w3-row-padding w3-margin-bottom">
+      <!-- Content sections -->
+    </div>
+    
+    <!-- Disqus comments section -->
+    <div id="disqus_thread"></div>
+  </div>
+
+  <!-- Add Disqus script -->
+  <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://aicceclusterbeta-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+  </script>
+
+  <!-- Other scripts, footers, etc. -->
+  <!-- Add other scripts, footers, etc. here -->
+</body>
+</html>
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embedded Google Calendar</title>
+  <style>
+    /* Style for the container */
+    #calendar-container {
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    /* Style for the button */
+    .btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Container for the embedded Google Calendar -->
+  <div id="calendar-container">
+    <iframe frameborder="0" height="500px" width="100%" src="https://calendar.online/23537d8ba452f090200b?iframe=true"></iframe>
+  </div>
+
+  <!-- Anchor tag with text -->
+  <a href="https://calendar.online/23537d8ba452f090200b" target="_blank">Go to the online calendar</a>
+
+<body>
+<script src="https://giscus.app/client.js"
+        data-repo="AICCEINTERACT/aiccebeta1"
+        data-repo-id="R_kgDOLM24fQ"
+        data-category="General"
+        data-category-id="DIC_kwDOLM24fc4Cc4yH"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light_high_contrast"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+            
+        </div>
+    </div>
+
+  <!-- Add Disqus script -->
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://aicceclusterbetav1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+	
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	
+	
+  <!-- Other scripts, footers, etc. -->
+  <!-- Add other scripts, footers, etc. here -->
+
+</div>
+
+<!-- Add other scripts, footers, etc. -->
+<!-- Add other scripts, footers, etc. here -->
+
+</body>
+</html>
+
+</div>  
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+  /* Chat box styles */
+  .chat-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    max-width: 300px;
+    width: 100%;
+    z-index: 9999;
+    display: none;
+  }
+
+  .chat-popup.open {
+    display: block;
+  }
+
+  .chat-popup .chat-header {
+    padding: 15px;
+    background-color: #F6431D;
+    color: white;
+    text-align: center;
+  }
+
+  .chat-popup .chat-header span {
+    float: right;
+    cursor: pointer;
+  }
+
+  .chat-popup .chat-body {
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto;
+  }
+
+  .chat-popup .chat-form {
+    padding: 15px;
+    border-top: 1px solid #ccc;
+  }
+
+  .chat-popup .chat-form input[type="text"] {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 5px;
+  }
+
+  .chat-popup .chat-form button {
+    width: 20%;
+    padding: 10px;
+    background-color: #F6431D;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .chat-popup .messages {
+    margin-bottom: 10px;
+  }
+
+  .message {
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  .message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .message .text {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  /* Chat icon styles */
+  .chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #F6431D;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+</style>
+</head>
+<body>
+
+<!-- Chat Icon -->
+<div class="chat-icon" onclick="togglePopup()">
+  <i class="fas fa-comment-alt"></i>
+</div>
+
+<!-- Chat Popup -->
+<div class="chat-popup" id="chatPopup">
+  <div class="chat-header">
+    INTER-ACT
+    <span onclick="togglePopup()">&times;</span>
+  </div>
+  <div class="chat-body" id="chatBody">
+    <!-- Chat messages will appear here -->
+  </div>
+  <div class="chat-form">
+    <input type="text" id="messageInput" placeholder="Enter your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script>
+function togglePopup() {
+  const popup = document.getElementById("chatPopup");
+  popup.classList.toggle("open");
+}
+
+function appendMessage(name, img, text) {
+  const chatBody = document.getElementById("chatBody");
+  const messageHTML = `
+    <div class="message">
+      <img src="${img}" alt="${name}">
+      <div class="text">
+        <strong>${name}</strong><br>
+        ${text}
+      </div>
+    </div>
+  `;
+  chatBody.insertAdjacentHTML("beforeend", messageHTML);
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+function sendMessage() {
+  const inputField = document.getElementById("messageInput");
+  const msg = inputField.value.trim();
+  if (msg === "") return;
+
+  appendMessage("You", "https://image.flaticon.com/icons/svg/145/145867.svg", msg);
+  inputField.value = "";
+
+  // Bot response
+  setTimeout(function() {
+    const response = getBotResponse(msg);
+    appendMessage("Bot", "https://image.flaticon.com/icons/svg/145/145813.svg", response);
+  }, 500); // Simulate bot typing delay
+}
+
+function getBotResponse(message) {
+  // Basic bot response logic
+  const greetings = ["Hi!", "Hello!", "Hey there!"];
+  const farewells = ["Goodbye!", "See you later!", "Bye!"];
+  const thanks = ["You're welcome!", "No problem!", "Anytime!"];
+  
+  const lowercaseMsg = message.toLowerCase();
+  
+  if (lowercaseMsg.includes("hello") || lowercaseMsg.includes("hi")) {
+    return greetings[Math.floor(Math.random() * greetings.length)];
+  } else if (lowercaseMsg.includes("goodbye") || lowercaseMsg.includes("bye")) {
+    return farewells[Math.floor(Math.random() * farewells.length)];
+  } else if (lowercaseMsg.includes("thanks") || lowercaseMsg.includes("thank you")) {
+    return thanks[Math.floor(Math.random() * thanks.length)];
+  } else if (lowercaseMsg.includes("payplus")) {
+    return 'Payplus link <a href="http://10.10.7.21/PAYplus/Default" target="_blank" rel="noopener noreferrer">click here</a>';
+  } else if (lowercaseMsg.includes("log override")) {
+    return 'Payplus link <a href="http://10.10.7.21/PAYplus/Default" target="_blank" rel="noopener noreferrer">click here</a>';
+  }else if (lowercaseMsg.includes("File leave")) {
+    return 'Payplus link <a href="http://10.10.7.21/PAYplus/Default" target="_blank" rel="noopener noreferrer">click here</a>';
+  } else if (lowercaseMsg.includes("Time out")) {
+    return 'Clock in on a timely basis via <a href="http://10.10.7.21/jikan/" target="_blank" rel="noopener noreferrer">JIKAN</a>';
+  } else if (lowercaseMsg.includes("Time in")) {
+    return 'Clock in on a timely basis via <a href="http://10.10.7.21/jikan/" target="_blank" rel="noopener noreferrer">JIKAN</a>';
+  } else if (lowercaseMsg.includes("jikan")) {
+    return 'Clock in on a timely basis via <a href="http://10.10.7.21/jikan/" target="_blank" rel="noopener noreferrer">JIKAN</a>';
+  } else {
+    return "Work in Progress";
+  }
+}
+
+</script>
+</body>
+</html>
+
+<!-- Add other scripts, footers, etc. -->
+<!-- Add other scripts, footers, etc. here -->
+    <!-- Add other scripts, footers, etc. here -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const postsContainer = document.getElementById("posts-container");
+            const eventsContainer = document.getElementById("events-container");
+            const userNameInput = document.getElementById("user-name");
+            const postContent = document.getElementById("post-content");
+            const eventTitleInput = document.getElementById("event-title");
+            const eventDateInput = document.getElementById("event-date");
+            const eventTimeInput = document.getElementById("event-time");
+
+            // Initial load of posts and events
+            loadPosts();
+            loadEvents();
+
+            // Fetch posts from the server
+            function loadPosts() {
+                // Simulating fetching posts from a server or database
+                const posts = [
+                    { id: 1, name: "MOD", content: "This is the first post.", resolved: false, timestamp: new Date().toLocaleString() },
+                    { id: 2, name: "Brian Miranda", content: "Welcome to the Message board!", resolved: true, timestamp: new Date().toLocaleString() },
+                    // Add more posts as needed
+                ];
+
+                posts.forEach(post => appendPost(post));
+            }
+
+            // Fetch events from the server
+            function loadEvents() {
+                // Simulating fetching events from a server or database
+                const events = [
+                    { id: 1, title: "Meeting", date: "2022-02-01", time: "14:30" },
+                    { id: 2, title: "Cluster Anna RNR", date: "2022-02-15", time: "10:00" },
+                    // Add more events as needed
+                ];
+
+                events.forEach(event => appendEvent(event));
+            }
+
+            // Submit a new post
+            window.submitPost = function() {
+                const name = userNameInput.value.trim();
+                const postText = postContent.value.trim();
+
+                if (name !== "" && postText !== "") {
+                    const post = {
+                        id: Date.now(), // Simulated unique identifier
+                        name: name,
+                        content: postText,
+                        resolved: false,
+                        timestamp: new Date().toLocaleString(),
+                    };
+
+                    // Simulating sending the post to a server or database
+                    // In a real-world scenario, you would use AJAX/fetch to send data to the server
+                    // and update the posts container after receiving a successful response.
+                    // For simplicity, we'll just append the post locally.
+                    appendPost(post);
+
+                    // Clear the input fields
+                    userNameInput.value = "";
+                    postContent.value = "";
+                }
+            };
+
+            // Delete a post
+            window.deletePost = function(postId) {
+                // Simulating deleting a post from a server or database
+                // In a real-world scenario, you would use AJAX/fetch to send a delete request to the server.
+                // For simplicity, we'll just remove the post locally.
+                const postElement = document.getElementById(`post-${postId}`);
+                if (postElement) {
+                    postsContainer.removeChild(postElement);
+                }
+            };
+
+            // Resolve a post
+            window.resolvePost = function(postId) {
+                // Simulating resolving a post on a server or database
+                // In a real-world scenario, you would use AJAX/fetch to send a resolve request to the server.
+                // For simplicity, we'll just update the post locally.
+                const postElement = document.getElementById(`post-${postId}`);
+                if (postElement) {
+                    const resolvedButton = postElement.querySelector(".resolve");
+                    if (resolvedButton) {
+                        resolvedButton.disabled = true;
+                        resolvedButton.textContent = "Resolved";
+                        resolvedButton.classList.add("resolved");
+                    }
+                }
+            };
+
+            // Add a new event
+            window.addEvent = function() {
+                const title = eventTitleInput.value.trim();
+                const date = eventDateInput.value;
+                const time = eventTimeInput.value;
+
+                if (title !== "" && date !== "" && time !== "") {
+                    const event = {
+                        id: Date.now(), // Simulated unique identifier
+                        title: title,
+                        date: date,
+                        time: time,
+                    };
+
+                    // Simulating sending the event to a server or database
+                    // In a real-world scenario, you would use AJAX/fetch to send data to the server
+                    // and update the events container after receiving a successful response.
+                    // For simplicity, we'll just append the event locally.
+                    appendEvent(event);
+
+                    // Clear the input fields
+                    eventTitleInput.value = "";
+                    eventDateInput.value = "";
+                    eventTimeInput.value = "";
+                }
+            };
+
+            // Delete an event
+            window.deleteEvent = function(eventId) {
+                // Simulating deleting an event from a server or database
+                // In a real-world scenario, you would use AJAX/fetch to send a delete request to the server.
+                // For simplicity, we'll just remove the event locally.
+                const eventElement = document.getElementById(`event-${eventId}`);
+                if (eventElement) {
+                    eventsContainer.removeChild(eventElement);
+                }
+            };
+
+            // Append a post to the message board
+            function appendPost(post) {
+                const postElement = document.createElement("div");
+                postElement.id = `post-${post.id}`;
+                postElement.className = "post";
+                postElement.innerHTML = `
+                    <div class="post-content">${post.content}</div>
+                    <div class="post-details">
+                        <span>Posted by: ${post.name}</span>
+                        <span>${post.timestamp}</span>
+                    </div>
+                    <div class="post-actions">
+                        <button class="delete" onclick="deletePost(${post.id})">Delete</button>
+                        <button class="resolve" onclick="resolvePost(${post.id})" ${post.resolved ? "disabled" : ""}>Resolve</button>
+                    </div>
+                `;
+
+                postsContainer.appendChild(postElement);
+            }
+
+            // Append an event to the Event tracker
+            function appendEvent(event) {
+                const eventElement = document.createElement("div");
+                eventElement.id = `event-${event.id}`;
+                eventElement.className = "calendar-event";
+                eventElement.innerHTML = `
+                    <div class="event-details">
+                        <strong>${event.title}</strong>
+                        <span>${event.date} ${event.time}</span>
+                    </div>
+                    <div class="event-actions">
+                        <button class="delete" onclick="deleteEvent(${event.id})">Delete</button>
+                    </div>
+                `;
+
+                eventsContainer.appendChild(eventElement);
+            }
+        });
+        
+        </add-to-calendar-button>
+    </script>
+</body>
+</html>
+
+
