@@ -505,9 +505,37 @@ input[type=submit]:hover {
       cursor: pointer;
       border-radius: 5px;
     }
+
+
+	  /* Disable text selection */
+        body {
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+
+        /* Disable right-click */
+        body {
+            pointer-events: none;
+        }
+
+        body * {
+            pointer-events: auto;
+        }
+	  
   </style>
 </head>
 <body>
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <!-- X-Frame-Options -->
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <!-- X-XSS-Protection -->
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
   <!-- Container for the embedded Google Calendar -->
   <div id="calendar-container">
@@ -991,6 +1019,22 @@ function getBotResponse(message) {
     if (top != self) {
         top.location = self.location;
     }
+	    /* Disable text selection */
+        body {
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+
+        /* Disable right-click */
+        body {
+            pointer-events: none;
+        }
+
+        body * {
+            pointer-events: auto;
+        }
     
     </script>
 </body>
